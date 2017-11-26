@@ -151,7 +151,7 @@ int main(int argc, char *argv[])
   while ( (opt = getopt_long(argc, argv, "+sexnouw:hV?", long_options, &ix)) != EOF ) {
     switch(opt) {
     case 's':
-      type = LOCK_SH;
+      type = F_RDLCK;
       break;
     case 'e':
     case 'x':
